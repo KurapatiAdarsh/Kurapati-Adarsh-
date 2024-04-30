@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clock</title>
+
+
+<style type="text/css">
+
+	#clk{
+		text-align:center;
+		font-size: 30px;
+		background-color: gray;
+
+	}
+	
+
+</style>
+
+
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+setInterval(clock,1000)
+		function clock(){
+			var a=new Date()
+			var hr=a.getHours()
+			var mm=a.getMinutes()
+			var sc=a.getSeconds()
+			var data=hr+":"+mm+":"+sc
+			document.getElementById("clk").innerHTML=data
+		}
+		clock()
+		
+	</script>
+	<div id="clk"></div>
+
+</body>
+</html>
